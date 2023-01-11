@@ -1,0 +1,8 @@
+1. Reduce
+2. Argument in normal funtion
+3. JSON.stringify() -->> isEqual question
+4. Array.flat();
+
+
+//
+1. which shuld be use normal funtion or arrow function and why
