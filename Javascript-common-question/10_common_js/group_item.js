@@ -1,5 +1,6 @@
 console.log("group_item");
 // 2. Group items on the basis of age of given array of object
+
 let people = [
     { name: "alice", age: 32 },
     { name: "max", age: 25 },
