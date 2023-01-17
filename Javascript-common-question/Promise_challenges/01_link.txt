@@ -1,6 +1,11 @@
+--------- YOUTUBE-----
+https://www.youtube.com/watch?v=HaJdoFp2OEc
+
+
 ---- After question 6 everything important --------
 https://betterprogramming.pub/10-javascript-promise-challenges-before-you-start-an-interview-c9af8d4144ec
 
 
 ---- Async/await --------
 https://medium.com/codex/javascript-async-await-javascript-interview-questions-10-e51629bef827
+
