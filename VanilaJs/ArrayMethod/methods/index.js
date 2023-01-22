@@ -5,11 +5,11 @@ let arr4 = [5, 6, 7, 8, 1]
 let arr5 = [1,2,3,4,5];
 let arr6 = [];
 
-console.log("Concat Method =>", arr1.concat(arr2, arr3))
-console.log("Join Method =>", arr1.join(' and '))
-console.log("Slice Method =>", arr1.slice(1, 4))
-console.log("Splice Method without refile delete =>", arr2.splice(1, 2)) //print arr2 and check
-console.log("Splice Method with refile delete=>", arr3.splice(1, 2, 'g')) //print arr3 and check
+console.log("Concat(arr1,arr2) =>", arr1.concat(arr2, arr3)) // return new Array
+console.log("Join(seperator) =>", arr1.join(' and ')) // return new string with seperator with each element
+console.log("Slice(start,end) =>", arr1.slice(1, 4)) // return a new array
+console.log("Splice Method without refile delete(start,deletecount,item) =>", arr2.splice(1, 2)) //print arr2 and check // chane existing array
+console.log("Splice Method with refile delete (start,deletecount,item)=>", arr3.splice(1, 2, 'g')) //print arr3 and check //change existing array
 console.log("indexOf Method =>", arr1.indexOf('b'))
 console.log("findIndex Method =>", arr5.findIndex((ele) => ele > 3)) //returns the index of the first element in an array that satisfies the condition
 console.log("lastIndexOf Method =>", arr1.lastIndexOf('b'))

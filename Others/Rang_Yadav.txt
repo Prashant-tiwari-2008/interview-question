@@ -1,0 +1,58 @@
+life cycle methodo for funciton and class base component
+deep copy shallow copy
+virtual DOM and real Dom and how it will work and differences
+types of componenent 
+life cycle method
+state props 
+JSX method
+webpack
+state less state full component	
+mutable and immutable in react
+lazy loading
+features of react
+axios and promise based(http request)
+closoure and curring function
+agile methodology
+ci/cd pipeline
+git
+string reverse 
+promise resolve reject pending
+axios and fetch difference
+sythetic events 
+flex box
+div inline div block
+async await
+positon absolute and relative fixed
+redux 
+hooks
+bubbling and capturing
+prototype
+lexical scope
+array of object
+dublicate value remove
+usememo use callback
+redux toolkit thunk saga
+higher order 
+iife function
+Error Boundaries 
+web api
+difference between session storage and local storage
+DOM BOM
+createReducer
+react version latest and project
+flow of the redux
+features & drawback of react
+debouncing in javascript
+heep and stack
+primitive and non primitive data type
+what is call state and call by value
+
+
+Techincal 
+performance optimization (usememo usecallback)
+controlled component uncontrolled component(useref)
+string revrse with word and character 
+progressbar
+div color show when click
+
+object.assign if we change in new object then it will change in initial value(deep copy shallow copy)
