@@ -31,10 +31,11 @@ console.log("copyWithIn(target,start,end) =>", arr1.copyWithin(arr1,1,4)) // cop
 console.log("fill(value,start,end) =>", arr5.fill('test',0,3), arr6.fill('test',0,2)) // fill the array with given value but the length of array alredy greater than end point -> print arr6
 console.log("Array.form(value,start,end) =>", Array.from('abcde')) // return array witht the given value
 console.log("includes(ele,start) =>", arr1.includes('a',2), arr1.includes('a')) // return boolean value
+console.log("at(index) =>",arr1.at(2)) // return the item at that index
 
 // Adavance topic
-console.log("keys(ele,start) =>", arr1.keys()) // create an arrya iteratir obj
-console.log("keys(ele,start) =>", Object.keys(arr1)) // return boolean value
-console.log("keys(ele,start) =>", Object.values(arr1)) // return boolean value
+// console.log("keys(ele,start) =>", arr1.keys()) // create an arrya iteratir obj
+// console.log("keys(ele,start) =>", Object.keys(arr1)) // return boolean value
+// console.log("keys(ele,start) =>", Object.values(arr1)) // return boolean value
 
 

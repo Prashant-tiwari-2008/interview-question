@@ -28,5 +28,14 @@ function books(arr) {
     return result;
 }
 
+function books1(Arr){
+    let x =[];
+    Arr.forEach(element => {
+       x=[...x,...element.books] 
+    });
+    return x;
+}
+
 console.log(books(friends));
+console.log(books1(friends));
 ["Bible", "harry potter", '.......', 'the Shining']

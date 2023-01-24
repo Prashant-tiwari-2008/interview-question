@@ -1,5 +1,4 @@
 function P(n = 0) {
-    debugger
     if (n === 1) {
         return Promise.resolve(1);
     }
