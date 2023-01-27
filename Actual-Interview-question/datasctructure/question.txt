@@ -1,0 +1,1 @@
+Q1. difference between dataStore and dataStructure

@@ -1,0 +1,5 @@
+Q1. Create a child and parent components and in the child components there is list and a input box. filter out the arrary data and show in the parent
+
+Q2.a?.b.c is a.b null what is the c will print
+
+Q3. option type in http

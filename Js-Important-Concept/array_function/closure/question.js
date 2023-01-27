@@ -1,4 +1,4 @@
-console.log("clogure example")
+console.log("closure example")
 
 //Que 1- write a function that would allow you to do this
 var addsix = createBase(6);

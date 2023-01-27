@@ -1,7 +1,7 @@
 1. call,apply and bind -- revision
 2. Argument in normal funtion
 3. JSON.stringify() -->> isEqual question
-4. Array.flat();
+4. Debouncing and throtling
 
 
 //

@@ -1,0 +1,5 @@
+Q1. union type
+Q2. how to make all value option in interfce
+Q3. difference between interfce and type
+Q4. Mixin in css
+Q5. 
