@@ -23,6 +23,56 @@ function plus_One(arr) {
     return y;
 }
 
-console.log(plus_One(digits1))
-console.log(plus_One(digits2))
-console.log(plus_One(digits3))
+// console.log(plus_One(digits1))
+// console.log(plus_One(digits2))
+// console.log(plus_One(digits3))
+
+// ===========>>> SOlution from net
+let plusOne = function(digits) {
+    for(let i=digits.length-1;i>=0;i--){
+        digits[i]++;
+        if(digits[i]>9){
+            digits[i]=0;
+        }
+        else{
+            return digits;
+        }
+    }
+    digits.unshift(1);
+    return digits;
+};
+
+// ==========>>> Best solution
+var plusOne1 = function(digits) {
+    if (digits.length === 1) {
+      if (digits[0] === 9) {
+        return [1, 0];
+      } else {
+        return [digits[0] + 1]
+      }
+    }
+    const res = [];
+    let acc = 1;
+    for (let i = digits.length - 1; i >= 0; i--) {
+        const curr = digits[i];
+        if (acc && curr === 9) {
+            res.unshift(0);
+            acc = 1;
+        } else {
+            res.unshift(acc ? curr + 1 : curr);
+            acc = 0;
+        }
+    }
+  
+    if (res[0] === 0) {
+      res.unshift(1);
+    }
+  
+    return res;
+  };
+
+
+console.log(plusOne(digits1))
+console.log(plusOne(digits2))
+console.log(plusOne(digits3))
+console.log(plusOne([9,9]))

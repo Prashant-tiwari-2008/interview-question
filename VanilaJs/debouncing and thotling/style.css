@@ -1,0 +1,24 @@
+h2 {
+    text-align: center;
+    background-color: #777;
+    text-decoration: underline;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+
+input {
+    display: block;
+    margin-bottom: 15px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button#debouncing {
+    padding: 3px 5px;
+    background-color: rgb(12, 169, 69);
+    color: black;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 5px;
+}

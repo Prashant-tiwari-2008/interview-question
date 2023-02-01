@@ -22,7 +22,6 @@ function removeDuplicate1(num1) {
 }
 
 const removeDuplicates2 = function (nums) {
-    debugger
     for (let i = 0; i < nums.length;) {
         if (nums[i] === nums[i + 1]) {
             nums.splice(i, 1)

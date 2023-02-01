@@ -3,3 +3,7 @@ Q1. Create a child and parent components and in the child components there is li
 Q2.a?.b.c is a.b null what is the c will print
 
 Q3. option type in http
+Q4. how we can use the a components form other project into current project in react.
+Q5. what is mixin
+Q6. how to avoid error except error boudndries.
+Q7. 
