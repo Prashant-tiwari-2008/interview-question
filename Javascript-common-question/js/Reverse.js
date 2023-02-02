@@ -29,6 +29,16 @@ const Reverse3 = (data) => {
     return data.split("").reverse("").join("");
 }
 
+// to reverse a string
+const Reverse4=(str)=>{
+    let reversestr = '';
+    for(let i=(str.length-1);i>=0;i--){
+        debugger
+        reversestr += str[i]
+    }
+    return reversestr
+}
+
 const data = [1, 2, 3];
 const str = "Prashant"
 // console.log(Reverse(data));
@@ -36,5 +46,6 @@ const str = "Prashant"
 // console.log(Reverse2(data))
 
 //for string
-console.log(Reverse3(str))
+// console.log(Reverse3(str))
+console.log(Reverse4(str))
 

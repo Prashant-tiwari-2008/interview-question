@@ -1,0 +1,56 @@
+============================ QUESTION - 1 ==================
+input = "tesssts"
+output = "tets"
+
+function removelatter(str){
+    let strnew=''
+    for(let i=0;i<str.length;i++){
+        if(str[i] == str[i+1] || str[i-1] == str[i]){
+            
+        }else{
+            strnew +=str[i]
+        }
+    }
+    return strnew
+}
+console.log(removelatter(input))
+
+============================ QUESTION - 2 ==================
+occurance find in array
+============================ QUESTION - 3 ==================
+function P(n = 0) {
+if (n === 1) {
+return Promise.resolve(1);
+}
+return Promise.reject(0);
+}
+ 
+P(1)
+.then((x) => {
+console.log(x);
+return P(0);
+})
+.then(() => {
+console.log('hello');
+})
+.catch((e) => {
+console.log(e);
+})
+.then(() => {
+console.log('world!');
+});
+
+// o/p => 1 0 world
+============================ QUESTION - 3 ==================    
+ var a = [1, 2, 3];
+ a[10] = 99;
+console.log(a[6]);
+
+============================ QUESTION - 4 ================== 
+console.log(true && 10 && 3)
+
+Q5. what is cluster
+Q6. what is event loop
+Q7. difference between pure and impure pipe
+Q8. difference between subject and behaviour subject
+ 
