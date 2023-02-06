@@ -13,15 +13,7 @@ Output: -1
 
 // not right solution
 var firstUniqChar = function (s) {
-    let str = s.split('');
-    for (let i = 0; i < s.length; i++) {
-        str.splice(str.indexOf(s[i]),1)
-        if(str.includes(s[i])){
-
-        }else{
-            return i;
-        }
-    }
+   
 };
 
 console.log(firstUniqChar(s))
