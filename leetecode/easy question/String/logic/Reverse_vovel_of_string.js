@@ -9,8 +9,17 @@ Input: s1 = "leetcode"
 Output: "leotcede"
 
 const Reverse_vowel_of_string = (word) => {
-    
+    let output = '';
+    let length = word.length - 1;
+    for (let i = 0; i < word.length; i++) {
+        if (word[length - i] == 'a' || word[length - i] == 'e' || word[length - i] == 'i' || word[length - i] == 'o' || word[length - i] == 'u') {
+            output += word[length - i]
+        }else{
+            output += word[i]
+        }
+    }
+    return output
 }
 
 console.log(Reverse_vowel_of_string(s))
-console.log(Reverse_vowel_of_string(s1))
+// console.log(Reverse_vowel_of_string(s1))

@@ -22,7 +22,7 @@ function findAnagram(wordOne, wordTwo) {
         }
     }
     for (ele in hash) {
-        if (hash[ele] !== 0) return false
+        if (hash[ele] < 0) return false
     }
     return true
 }

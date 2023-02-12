@@ -28,5 +28,14 @@ const countwordwithObj = (arr) => {
     return count;
 }
 
+// method 3 
+const countwordwithObj2 = (arr) => {
+    var hash = {}
+    for(ele of arr){
+        hash[ele] = (hash[ele] || 0 ) + 1
+        
+    }
+}
+
 console.log(countword(arr));
 console.log(countwordwithObj(arr));
