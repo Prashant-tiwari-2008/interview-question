@@ -9,7 +9,7 @@ const INITIAL_LIST = {
     ],
     "Finish homework": [
         { "Finish math homework": false },
-        { "Finish science homework": false },
+        { "Finish science homework": true },
         { "Finish Reactjs homework": false },
     ],
     "Achieve nirvana": [
@@ -20,6 +20,14 @@ const INITIAL_LIST = {
 
 const Checklist = () => {
     const [list, setList] = useState(INITIAL_LIST)
+
+    const clickTask = (topTask, index, taskText) => {
+        debugger
+        const newList = { ...INITIAL_LIST };
+        newList[topTask][index][taskText] = !newList[topTask][index][taskText];
+        setList(newList)
+    }
+
     return (
         <div
             style={{
@@ -29,14 +37,14 @@ const Checklist = () => {
                 padding: 40,
             }}
         >
-            {list && Object.entries(list).map(([topTask, subTask]) => {
+            {list && Object.entries(list).map(([topTask, subTask], index) => {
                 return (
-                    <>
+                    <React.Fragment key={index}>
                         <h2 style={{ textAlign: 'center' }}>{topTask}</h2>
-                        <div style={{display:"flex"}}>
-                            <DisplaySubTasks topTask={topTask} subTask={subTask} />
+                        <div style={{ display: "flex" }}>
+                            <DisplaySubTasks topTask={topTask} subTask={subTask} clickTask={clickTask} />
                         </div>
-                    </>
+                    </React.Fragment>
                 )
             })}
         </div>
