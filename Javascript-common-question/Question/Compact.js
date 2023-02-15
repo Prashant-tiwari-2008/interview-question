@@ -1,17 +1,7 @@
 console.log("Compact string");
 // Write a method that clears array from all unnecessary elements, like false, undefined, empty strings, zero, null
 
-// Need to check
-function compact(mixArray) {
-    return mixArray.map((ele) => {
-        if (ele) {
-            return ele
-        }
-    }
-    )
-}
-
-//with for loop
+//wrong solution -- chech in suboor secrion
 function compact1(mixArray) {
     let trueArray = [];
     for (let i = 0; i < mixArray.length; i++) {

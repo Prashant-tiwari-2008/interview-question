@@ -18,7 +18,6 @@ function MergeArray(list1, list2) {
     let list2Index = 0;
     let length = list1.length + list2.length;
     for (let i = 0; i < length; i++) {
-        debugger
         if (!(list1[i] == 0 && list2[list2Index] == 0)) {
             if (list1[i] === list2[list2Index] || list1[i] > list2[i]) {
                 list1.splice(i, 0, list2[list2Index])

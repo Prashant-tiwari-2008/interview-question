@@ -33,7 +33,6 @@ const Reverse3 = (data) => {
 const Reverse4=(str)=>{
     let reversestr = '';
     for(let i=(str.length-1);i>=0;i--){
-        debugger
         reversestr += str[i]
     }
     return reversestr

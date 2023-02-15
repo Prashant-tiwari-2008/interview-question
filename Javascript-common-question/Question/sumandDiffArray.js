@@ -7,7 +7,6 @@ const unionAndIntersection = (arrOne, ArrayTwo) => {
    const thirdArray = [...arrOne, ...ArrayTwo];
    console.log(thirdArray.length);
    for (let i = 0; i < thirdArray.length; i++) {
-       debugger
        if (ArrayTwo.includes(arrayOne[i])) {
            unionArray.push(arrOne[i])
        } else {

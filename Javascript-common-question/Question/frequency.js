@@ -28,7 +28,7 @@ const countwordwithObj = (arr) => {
     return count;
 }
 
-// method 3 
+// method 3 ==> best solution
 const countwordwithObj2 = (arr) => {
     var hash = {}
     for(ele of arr){

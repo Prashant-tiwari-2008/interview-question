@@ -6,7 +6,6 @@ function reverseString(string) {
 }
 
 function getlastCharacter(stringArray) {
-    debugger
     if (stringArray.length == 0) return '';
     return stringArray.pop() + getlastCharacter(stringArray)
 }

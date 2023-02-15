@@ -3,9 +3,7 @@ console.log("Is Equal");
 
 //first solution ==>> simple solution 
 function isEqual(arr, arr1) {
-    if (arr.length !== arr1.length) {
-        return false
-    }
+    if (arr.length !== arr1.length) return false
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] !== arr1[i]) {
             return false
@@ -62,7 +60,6 @@ function isEqual6(arr, arr1) {
         return false;
     }
 }
-
 
 const arr1 = [1, 2, 3, 4, 5];
 const arr2 = [1, 2, 3, 4, 5];

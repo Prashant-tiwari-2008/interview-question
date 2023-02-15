@@ -15,7 +15,6 @@ function unique1(arr) {
 
 // second way 
 function unique2(arr) {
-
     let unique = arr.reduce((acc, cv) => {
         if (!acc.includes(cv)) {
             acc.push(cv)
