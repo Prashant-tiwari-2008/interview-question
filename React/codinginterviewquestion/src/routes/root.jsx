@@ -1,10 +1,10 @@
 import { Link, Outlet } from "react-router-dom";
 
 export default function Root() {
-    let questions = ['first', 'second', 'third', 'fourth', 'fivth', 'sixth']
+    let questions = ['customeHook','timer','first', 'second', 'third', 'fourth', 'fivth', 'sixth','seven']
     return (
         <>
-            <div id="sidebar">
+            <div id="sidebar" style={{background:"black",color:"white"}}>
                 <h1>React Router Contacts</h1>
                 <div>
                     <form id="search-form" role="search">
@@ -29,11 +29,11 @@ export default function Root() {
                 </div>
                 <nav>
                     <ul>
-                        {questions && questions.map((questionNumber => {
-                            return (<li>
+                        {questions && questions.map((questionNumber,index )=> {
+                            return (<li key={index}>
                                 <Link to={`/question/${questionNumber}`}>{`Question No. ${questionNumber}`}</Link>
                             </li>)
-                        }))}
+                        })}
                         {/* <li>
                             <Link to={`/question/second`}>Question No. 2</Link>
                         </li> */}

@@ -35,4 +35,15 @@ console.log(multiArray([[[5], 3], 0, 2, ['foo'], [], [4, [5, 6]]])); // 7
 // 	return total + totalIntegers(array);
 // }
 
-// console.log(totalIntegers([[[5], 3], 0, 2, ['foo'], [], [4, [5, 6]]])); // 7
+// console.log(totalIntegers([[[5], 3], 0, 2, ['foo'], [], [4, [5, 6]]])); // 
+
+
+//! important one
+function flatArray([x,...xs]){
+    return x !== undefined ? [...Array.isArray(x) ? flatArray(x) : [x],...flatArray(xs)]
+                           : [];
+  }
+  
+  var na = [[1,2],[3,[4,5]],[6,7,[[[8],9]]],10],
+      fa = flatArray(na);
+  console.log(fa);
