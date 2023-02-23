@@ -42,6 +42,29 @@ function findAnagram(wordOne, wordTwo) {
     return true
 }
 
+
+// Third solution
+function isAnagram(strOne,strTwo){
+    let strOneHash = {}
+    let strTwoHash = {}
+    
+    for(char of strOne){
+        strOneHash[char] = (strOneHash[char] || 0) + 1
+    }
+    
+    for(char of strTwo){
+    strTwoHash[char] = (strTwoHash[char] || 0) + 1
+    }
+    
+    for(char of strOne){
+        if(strOneHash[char]  !== strTwoHash[char]){
+            return false
+        }
+    }
+    
+    return true;
+}
+
 console.log(findAnagram(word1, word2))
 console.log(findAnagram(word3, word4))
 console.log(findAnagram(word5, word6))

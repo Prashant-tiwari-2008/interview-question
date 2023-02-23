@@ -13,5 +13,6 @@ function checkNumber(arr) {
     }
     return isOnlyNumber;
 }
+
 console.log(checkNumber(randomArray))
 console.log(checkNumber(randomArray1))
