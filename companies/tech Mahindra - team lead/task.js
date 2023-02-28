@@ -18,7 +18,6 @@ function getNumberOfElement(userObject){
         }else{
              count++;
         }
-        
     }
     return count;
 }

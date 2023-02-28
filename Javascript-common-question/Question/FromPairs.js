@@ -9,6 +9,16 @@ const formPairs = (array) => {
   return newObje;
 }
 
+//Other solution
+
+const formPairs2 = (array) => {
+  const newObje = {};
+  for (ele of array) {
+    newObje[ele[0]] = ele[1]
+  }
+  return newObje;
+}
+
 
 // with reduce method
 const formPairs1 = (array) => array.reduce((arr, value) => {
@@ -21,3 +31,4 @@ const formPairs1 = (array) => array.reduce((arr, value) => {
 const data = [['a', 1], ['b', 2], ['c', 3]];
 console.log(formPairs(data)) // { 'a': 1, 'b': 2 }
 console.log(formPairs1(data)) // { 'a': 1, 'b': 2 }
+console.log(formPairs2(data)) // { 'a': 1, 'b': 2 }

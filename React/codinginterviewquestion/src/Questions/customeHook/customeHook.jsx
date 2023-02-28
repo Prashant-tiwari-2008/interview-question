@@ -6,8 +6,10 @@ const url = "https://jsonplaceholder.typicode.com/todos"
 const CustomeHook = () => {
     const { loading, data, error } = useFetch(url)
 
-    return (
-        <div>
+
+    const printTable = () => {
+        return (
+            <>
                 {loading ? <h1>Loading</h1> : data ? data?.map((task) => {
                     return (
                         <>
@@ -18,7 +20,14 @@ const CustomeHook = () => {
                         </>
                     )
                 }) : <h1>{error}</h1>}
-        </div>
+            </>
+        )
+    }
+
+    return (
+        <>
+            {printTable}
+        </>
     )
 }
 
