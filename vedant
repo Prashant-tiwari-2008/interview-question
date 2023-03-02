@@ -1,0 +1,18 @@
+// Given two integers N and M, where N is the number of friends sitting in a clockwise manner in a circle and M is the number of cakes. The task is to calculate the left number of cakes after distributing i cakes to i’th friend. The distribution of cakes will stop if the count of cakes is less than the required amount.
+
+function cakeDistribution(people,cake){
+    let numberOfPeople = people;
+    let numberOfCake = cake;
+  
+    for(let i=1; i<=numberOfPeople; i++){
+        if(i < numberOfCake){
+        numberOfCake -= i
+        }else{
+            return numberOfCake;
+        }
+    }
+  
+    return cakeDistribution(numberOfPeople,numberOfCake)
+}
+
+console.log(cakeDistribution(3,35))
