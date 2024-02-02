@@ -1,4 +1,4 @@
-console.log("Merge Two Sorted List")
+console.log("Merge Two Sorted array")
 
 
 // Example 1:
