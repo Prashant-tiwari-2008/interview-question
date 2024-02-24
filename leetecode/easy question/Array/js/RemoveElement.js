@@ -12,16 +12,15 @@ function RemoveElement(arr, val) {
 }
 
 //Best Runtime souliton
-function removeElement(nums, val) {
-    let i = 0
+
+
+var removeElement = function(nums, val) {
+    debugger
     let k = 0
-    while (i < nums.length) {
-        debugger
+    for(let i =0; i< nums.length; i++){
         if (nums[i] !== val) {
-            nums[k] = nums[i]
-            k += 1
+            nums[k++] = nums[i]
         }
-        i += 1
     }
     return k
 };
@@ -29,7 +28,9 @@ function removeElement(nums, val) {
 let x = [3, 2, 2, 3]
 let y = [0, 1, 2, 2, 3, 0, 4, 2]
 // console.log(RemoveElement(x, 3))
-console.log(RemoveElement(y, 2)) //[0,1,4,0,3]
+// console.log(RemoveElement(y, 2)) //[0,1,4,0,3]
 
 console.log(removeElement(x, 3))
 console.log(removeElement(y, 2)) //[0,1,4,0,3]
+
+

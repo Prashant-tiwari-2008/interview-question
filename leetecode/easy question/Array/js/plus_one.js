@@ -29,6 +29,7 @@ function plus_One(arr) {
 
 // ===========>>> SOlution from net
 let plusOne = function(digits) {
+  debugger
     for(let i=digits.length-1;i>=0;i--){
         digits[i]++;
         if(digits[i]>9){
@@ -72,7 +73,7 @@ var plusOne1 = function(digits) {
   };
 
 
-console.log(plusOne(digits1))
-console.log(plusOne(digits2))
-console.log(plusOne(digits3))
-console.log(plusOne([9,9]))
+// console.log(plusOne(digits1))
+// console.log(plusOne(digits2))
+// console.log(plusOne(digits3))
+console.log(plusOne([1,9,9]))

@@ -13,7 +13,22 @@ Output: -1
 
 // not right solution
 var firstUniqChar = function (s) {
-   
+    let hash = {};
+    for(let i=0;i<s.length;i++){
+        if(hash[s[i]]){
+            hash[s[i]].push(i)
+        }else{
+            hash[s[i]] = [i]
+        }
+    }
+    
+    for(val in hash){
+        if(hash[val].length === 1){
+            return val
+        }
+    }
+    
+    return -1
 };
 
 console.log(firstUniqChar(s))

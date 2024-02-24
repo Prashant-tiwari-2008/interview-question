@@ -1,0 +1,30 @@
+Instructions:
+You need to write code for the questions listed below. You can attempt any two out of five questions. You can use any online compiler, system editor or web console.
+You have a total 30 min time. Your code should run and output should match.
+At the end you need to show output by running it.
+
+If you don’t have any editor then you can also use following,
+https://stackblitz.com/
+Find the next palindrome number. If I pass any integer value to function it should return the next palindrome number.
+For example:
+If I pass 105 - it should return 111
+If I pass 100 - it should return 101
+Print the first “n” prime numbers. N is anything a user might enter.
+For example:
+n = 5 Output is 2,3,5,7,11
+n = 8 Output is 2,3,5,7,11,13,17,19
+Write a function fib() that takes an integer n and returns the series up to nth Fibonacci number.
+	
+	For example: 
+
+fib(1);  // => 1
+fib(2);  // => 1, 1
+fib(3);  // => 1, 1, 2
+fib(4);  // => 1, 1, 2, 3
+fib(5);  // => 1, 1, 2, 3, 5
+fib(6);  // => 1, 1, 2, 3, 5, 8
+Create an Angular / React component which will have a progress bar. It will increment after 1 secs. The progress bar will keep on incrementing till the width of the page is met and then it will stop incrementing.
+
+Write an algorithm which will tell if a group of characters can be a probable palindrome string with its different combination. Example “rarecac”…. Its possible combinations can be rraacec, racecar etc. Now Racecar is the palindrome, hence return true
+
+
